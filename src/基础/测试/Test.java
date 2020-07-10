@@ -12,6 +12,7 @@ public class Test {
 		String a = "12";
 		String b = "34";
 		String c = a+b;
+		System.out.println(a.charAt(0));
 		System.out.println(c);
 		double d = Double.POSITIVE_INFINITY;
 	}
@@ -22,5 +23,6 @@ public class Test {
 		a();
 		System.out.println("static2");
 
+		System.out.println(Math.addExact(1,2));
 	}
 }

@@ -1,5 +1,8 @@
 package 基础.Math类;
 
+import java.util.Queue;
+import java.util.Stack;
+
 /**
  * @ClassName MathTest
  * @Description TODO
