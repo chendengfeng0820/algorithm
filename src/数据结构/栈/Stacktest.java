@@ -17,7 +17,7 @@ public class Stacktest {
 		System.out.println(stack);
 
 		stack.push(3);//入栈
-		stack.pop();       //出栈
+		int pop = (Integer) stack.pop();//出栈
 		stack.peek();      //栈顶元素
 		stack.search(2); //栈中元素查找  返回索引
 

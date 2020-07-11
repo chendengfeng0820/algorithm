@@ -3,6 +3,7 @@ package 数据结构.迭代;
 import jdk.internal.dynalink.linker.LinkerServices;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -18,9 +19,15 @@ public class ForEachTest {
 		users.add(new User("cdf"));
 		users.add(new User("fyl"));
 
-		for (User u : users) {
+		Iterator iterator = users.iterator();
+		while (iterator.hasNext()){
+			User u = (User) iterator.next();
 			System.out.println(u);
 		}
+//
+//		for (User u : users) {
+//			System.out.println(u);
+//		}
 	}
 
 
