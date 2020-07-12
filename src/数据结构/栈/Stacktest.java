@@ -21,11 +21,15 @@ public class Stacktest {
 		stack.peek();      //栈顶元素
 		stack.search(2); //栈中元素查找  返回索引
 
+		StringBuilder stringBuilder= new StringBuilder();
+		stringBuilder.append(1);
+		Integer.valueOf(stringBuilder.toString(),2);
 
 		stack.pop();
 		System.out.println(stack);
 		System.out.println(stack.peek());
 		System.out.println(stack.search(2));
+
 
 	}
 }
