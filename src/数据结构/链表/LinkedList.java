@@ -10,6 +10,22 @@ public class LinkedList {
 
 	Node head = new Node(0,"");
 
+	public LinkedList() {
+	}
+
+	public LinkedList(Node head) {
+		this.head = head;
+	}
+
+	public Node print(Node head){
+		Node temp = head;
+		if (head.next == null){
+			return null;
+		}
+		System.out.println(temp.next);
+		return print(temp.next);
+	}
+
 	/**
 	 * 按照list添加顺序添加
 	 * @param node
@@ -111,6 +127,26 @@ public class LinkedList {
 			System.out.println("不存在此节点");
 		}
 	}
+
+	/**
+	 * 链表的长度
+	 * @param head  链表头节点
+	 */
+	public int getLength(Node head){
+		int length = 0;
+		Node cur = head.next;
+		if (head.next == null){
+			return 0;
+		}
+		while (head.next != null){
+			length++;
+			head = head.next;
+		}
+		return length;
+	}
+
+
+
 	/**
 	 * 遍历展示
 	 */

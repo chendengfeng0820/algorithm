@@ -7,6 +7,8 @@ package 数据结构.链表;
  * @Date: 2020-07-27 12:08
  **/
 public class Demo {
+
+
 	public static void main(String[] args) {
 		LinkedList list = new LinkedList();
 
@@ -16,23 +18,28 @@ public class Demo {
 		Node node4 = new Node(4,"ddd");
 		Node node5 = new Node(3,"fff");
 
-//		list.add(node1);
-//		list.add(node4);
-//		list.add(node2);
-//		list.add(node3);
-		list.addByOrder(node1);
-		list.addByOrder(node2);
-		list.addByOrder(node3);
-		list.addByOrder(node4);
-
-		list.list();
+		list.add(node1);
+		list.add(node4);
+		list.add(node2);
+		list.add(node3);
+//		list.addByOrder(node1);
+//		list.addByOrder(node2);
+//		list.addByOrder(node3);
+//		list.addByOrder(node4);
+//
+//		System.out.println(list.getLength(list.head));
+//
+//		list.list();
 
 //		System.out.println("修改后的=====");
 //		list.update(node5);
 //		list.list();
+//
+//		System.out.println("删除后的======");
+//		list.delete(node3);
+//		list.list();
 
-		System.out.println("删除后的======");
-		list.delete(node3);
-		list.list();
+		System.out.println(list.print(list.head));
+
 	}
 }
